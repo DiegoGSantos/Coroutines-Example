@@ -1,0 +1,32 @@
+package com.diego.coroutinesexample.restClient;
+
+import com.diego.coroutinesexample.Constants;
+
+import java.io.IOException;
+import okhttp3.Credentials;
+import okhttp3.Interceptor;
+import okhttp3.Request;
+import okhttp3.Response;
+
+public class BasicAuthInterceptor implements Interceptor {
+
+    private String credentials;
+
+    public BasicAuthInterceptor(String user, String password) {
+        this.credentials = Credentials.basic(user, password);
+    }
+
+    @Override
+    public Response intercept(Chain chain) throws IOException {
+        Request request = chain.request();
+
+        if (request.url().toString().equals("https://api.globalcode.com.br/v1/oauth2/token")) {
+            Request authenticatedRequest = request.newBuilder()
+                    .header("Authorization", credentials).build();
+            return chain.proceed(authenticatedRequest);
+        }
+
+        return chain.proceed(request);
+    }
+
+}
