@@ -25,13 +25,19 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         launch(UI) {
-            val tokenTask = Service.create()
-                    .requestToken().awaitResponse()
-            val token = tokenTask.body()?.token
-            val events = Service.create()
-                    .getEvents("Bearer $token").awaitResponse()
+            try {
+                val tokenTask = Service.create()
+                        .requestToken().awaitResponse()
+                val token = tokenTask.body()?.token
+                val events = Service.create()
+                        .getEvents("Bearer $token").awaitResponse()
 
-            displayEvents(events)
+                displayEvents(events)
+            } catch (trowable: Throwable) {
+                errorMessage.visibility = VISIBLE
+                progress.visibility = GONE
+                eventsList.visibility = GONE
+            }
         }
     }
 
@@ -45,6 +51,6 @@ class MainActivity : AppCompatActivity() {
         progress.visibility = GONE
         eventsList.visibility = VISIBLE
 
-        events.body()?.let { eventsAdapter.setList(it) }
+        events.body()?.reversed()?.let { eventsAdapter.setList(it) }
     }
 }
