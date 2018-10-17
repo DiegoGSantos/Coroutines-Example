@@ -1,0 +1,286 @@
+[
+  {
+    "id": 1,
+    "descricao": "The Developer's Conference 2008",
+    "dias": 1
+  },
+  {
+    "id": 2,
+    "descricao": "The Developer's Conference 2008 - Floripa",
+    "dias": 1
+  },
+  {
+    "id": 10,
+    "descricao": "The Developer's Conference 2009 - SP",
+    "dias": 1
+  },
+  {
+    "id": 11,
+    "descricao": "The Developer's Conference 2009 - Floripa",
+    "dias": 1
+  },
+  {
+    "id": 12,
+    "descricao": "The Developer's Conference 2009 - Rio",
+    "dias": 1
+  },
+  {
+    "id": 21,
+    "descricao": "The Developer's Conference 2010 - SP",
+    "dias": 1
+  },
+  {
+    "id": 22,
+    "descricao": "The Developer's Conference 2010 - SP (organiza\u00e7\u00e3o)",
+    "gratuito": true,
+    "dias": 1
+  },
+  {
+    "id": 24,
+    "descricao": "The Developer's Conference 2010 - Floripa",
+    "dias": 1
+  },
+  {
+    "id": 25,
+    "descricao": "The Developer's Conference 2010 - Floripa (organiza\u00e7\u00e3o)",
+    "gratuito": true,
+    "dias": 1
+  },
+  {
+    "id": 36,
+    "descricao": "The Developer's Conference 2011 S\u00e3o Paulo",
+    "dias": 1
+  },
+  {
+    "id": 37,
+    "descricao": "The Developer's Conference 2011 Florian\u00f3polis",
+    "dias": 1
+  },
+  {
+    "id": 38,
+    "descricao": "The Developer's Conference 2011 Goi\u00e2nia",
+    "dias": 1
+  },
+  {
+    "id": 40,
+    "descricao": "The Developer's Conference 2012 S\u00e3o Paulo",
+    "chave": "tdc-2012-saopaulo",
+    "dias": 5
+  },
+  {
+    "id": 41,
+    "descricao": "The Developer's Conference 2012 Florian\u00f3polis",
+    "chave": "tdc-2012-florianopolis",
+    "dias": 1
+  },
+  {
+    "id": 42,
+    "descricao": "The Developer's Conference 2013 S\u00e3o Paulo (online)",
+    "chave": "tdc-2013-saopaulo-online",
+    "gratuito": true,
+    "dias": 5
+  },
+  {
+    "id": 45,
+    "descricao": "The Developer's Conference 2012 Florian\u00f3polis (online)",
+    "chave": "tdc-2012-florianopolis-online",
+    "gratuito": true,
+    "dias": 1
+  },
+  {
+    "id": 47,
+    "descricao": "The Developer's Conference 2012 Goi\u00e2nia",
+    "chave": "tdc-2012-goiania",
+    "dias": 1
+  },
+  {
+    "id": 50,
+    "descricao": "The Developer's Conference 2013 Florian\u00f3polis",
+    "chave": "tdc-2013-florianopolis",
+    "dias": 3
+  },
+  {
+    "id": 51,
+    "descricao": "The Developer's Conference 2013 S\u00e3o Paulo",
+    "chave": "tdc-2013-saopaulo",
+    "dias": 5
+  },
+  {
+    "id": 52,
+    "descricao": "The Developer's Conference 2013 Porto Alegre",
+    "chave": "tdc-2013-portoalegre",
+    "dias": 2
+  },
+  {
+    "id": 53,
+    "descricao": "The Developer's Conference 2013 Porto Alegre (online)",
+    "chave": "tdc-2013-portoalegre-online",
+    "gratuito": true,
+    "dias": 2
+  },
+  {
+    "id": 57,
+    "descricao": "The Developer's Conference 2014 Florian\u00f3polis",
+    "chave": "tdc-2014-florianopolis",
+    "dias": 4
+  },
+  {
+    "id": 58,
+    "descricao": "The Developer's Conference 2014 S\u00e3o Paulo",
+    "chave": "tdc-2014-saopaulo",
+    "dias": 5
+  },
+  {
+    "id": 59,
+    "descricao": "The Developer's Conference 2014 Porto Alegre",
+    "chave": "tdc-2014-portoalegre",
+    "dias": 3
+  },
+  {
+    "id": 62,
+    "descricao": "The Developer's Conference 2014 Florian\u00f3polis - Hackathon",
+    "chave": "tdc-2014-florianopolis-hackathons",
+    "dias": 3
+  },
+  {
+    "id": 63,
+    "descricao": "The Developer's Conference 2014 Florian\u00f3polis (online)",
+    "chave": "tdc-2014-florianopolis-online",
+    "gratuito": true,
+    "dias": 4
+  },
+  {
+    "id": 65,
+    "descricao": "The Developer's Conference 2014 S\u00e3o Paulo - TDC4Kids",
+    "chave": "tdc-2014-saopaulo-tdc4kids",
+    "dias": 1
+  },
+  {
+    "id": 66,
+    "descricao": "The Developer's Conference 2014 S\u00e3o Paulo - online",
+    "chave": "tdc-2014-saopaulo-online",
+    "gratuito": true
+  },
+  {
+    "id": 67,
+    "descricao": "The Developer's Conference 2014 Porto Alegre - TDC4Kids",
+    "chave": "tdc-2014-portoalegre-tdc4kids",
+    "dias": 1
+  },
+  {
+    "id": 68,
+    "descricao": "The Developer's Conference 2014 Porto Alegre - online",
+    "chave": "tdc-2014-portoalegre-online",
+    "gratuito": true
+  },
+  {
+    "id": 71,
+    "descricao": "TDC 2015 Florian\u00f3polis",
+    "chave": "tdc-2015-florianopolis",
+    "dias": 4,
+    "dataInicio": "2015-05-13 00:00:00",
+    "dataTermino": "2015-05-16 23:59:59"
+  },
+  {
+    "id": 75,
+    "descricao": "TDC 2015 S\u00e3o Paulo",
+    "chave": "tdc-2015-saopaulo",
+    "dias": 5,
+    "dataInicio": "2015-07-21 00:00:00",
+    "dataTermino": "2015-07-25 23:59:59"
+  },
+  {
+    "id": 78,
+    "descricao": "TDC 2015 Porto Alegre",
+    "chave": "tdc-2015-portoalegre",
+    "dias": 3,
+    "dataInicio": "2015-09-24 00:00:00",
+    "dataTermino": "2015-09-26 23:59:59"
+  },
+  {
+    "id": 79,
+    "descricao": "TDC 2015 Porto Alegre - TDC4Kids",
+    "chave": "tdc-2015-portoalegre-tdc4kids",
+    "dias": 1,
+    "dataInicio": "2015-09-26 00:00:00",
+    "dataTermino": "2015-09-26 23:59:59"
+  },
+  {
+    "id": 83,
+    "descricao": "TDC 2016 Florian\u00f3polis",
+    "chave": "tdc-2016-florianopolis",
+    "dias": 4,
+    "dataInicio": "2016-05-11 00:00:00",
+    "dataTermino": "2016-05-14 23:59:59"
+  },
+  {
+    "id": 86,
+    "descricao": "TDC 2016 S\u00e3o Paulo",
+    "chave": "tdc-2016-saopaulo",
+    "dias": 5,
+    "dataInicio": "2016-07-05 00:00:00",
+    "dataTermino": "2016-07-09 23:59:59"
+  },
+  {
+    "id": 89,
+    "descricao": "TDC 2016 Porto Alegre",
+    "chave": "tdc-2016-portoalegre",
+    "dias": 4,
+    "dataInicio": "2016-10-05 00:00:00",
+    "dataTermino": "2016-10-08 23:59:59"
+  },
+  {
+    "id": 92,
+    "descricao": "TDC 2017 Florian\u00f3polis",
+    "chave": "tdc-2017-florianopolis",
+    "ativo": true,
+    "dias": 4,
+    "dataInicio": "2017-05-03 00:00:00",
+    "dataTermino": "2017-05-06 23:59:59"
+  },
+  {
+    "id": 95,
+    "descricao": "TDC 2017 S\u00e3o Paulo",
+    "chave": "tdc-2017-saopaulo",
+    "ativo": true,
+    "dias": 5,
+    "dataInicio": "2017-07-18 00:00:00",
+    "dataTermino": "2017-07-22 23:59:59"
+  },
+  {
+    "id": 98,
+    "descricao": "TDC 2017 Porto Alegre",
+    "chave": "tdc-2017-portoalegre",
+    "ativo": true,
+    "dias": 4,
+    "dataInicio": "2017-11-08 00:00:00",
+    "dataTermino": "2017-11-11 23:59:59"
+  },
+  {
+    "id": 101,
+    "descricao": "TDC 2018 Florian\u00f3polis",
+    "chave": "tdc-2018-florianopolis",
+    "ativo": true,
+    "dias": 4,
+    "dataInicio": "2018-04-18 00:00:00",
+    "dataTermino": "2018-04-21 00:00:00"
+  },
+  {
+    "id": 104,
+    "descricao": "TDC 2018 S\u00e3o Paulo",
+    "chave": "tdc-2018-saopaulo",
+    "ativo": true,
+    "dias": 5,
+    "dataInicio": "2018-07-17 00:00:00",
+    "dataTermino": "2018-07-21 00:00:00"
+  },
+  {
+    "id": 107,
+    "descricao": "TDC 2018 Porto Alegre",
+    "chave": "tdc-2018-portoalegre",
+    "ativo": true,
+    "dias": 4,
+    "dataInicio": "2018-12-05 00:00:00",
+    "dataTermino": "2018-12-08 00:00:00"
+  }
+]
