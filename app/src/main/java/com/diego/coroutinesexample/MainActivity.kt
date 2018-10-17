@@ -19,29 +19,24 @@ import retrofit2.Response
 class MainActivity : AppCompatActivity() {
 
     lateinit var eventsAdapter: CustomAdapter
+    private val presenter = EventsPresenter(this)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         launch(UI) {
-            try {
-                val tokenTask = Service.create()
-                        .requestToken().awaitResponse()
-                val token = tokenTask.body()?.token
-                val events = Service.create()
-                        .getEvents("Bearer $token").awaitResponse()
-
-                displayEvents(events)
-            } catch (trowable: Throwable) {
-                errorMessage.visibility = VISIBLE
-                progress.visibility = GONE
-                eventsList.visibility = GONE
-            }
+           presenter.getEvents()
         }
     }
 
-    private fun displayEvents(events: Response<List<Event>>) {
+    fun showError() {
+        errorMessage.visibility = VISIBLE
+        progress.visibility = GONE
+        eventsList.visibility = GONE
+    }
+
+    fun displayEvents(events: List<Event>) {
         eventsList.apply {
             layoutManager = LinearLayoutManager(this@MainActivity)
             eventsAdapter = CustomAdapter()
@@ -51,6 +46,6 @@ class MainActivity : AppCompatActivity() {
         progress.visibility = GONE
         eventsList.visibility = VISIBLE
 
-        events.body()?.reversed()?.let { eventsAdapter.setList(it) }
+        events.reversed().let { eventsAdapter.setList(it) }
     }
 }
