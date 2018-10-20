@@ -1,8 +1,8 @@
 package com.diego.coroutinesexample
 
-import kotlinx.coroutines.experimental.runBlocking
-import okhttp3.mockwebserver.Dispatcher
+import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse
+import okhttp3.mockwebserver.MockWebServer
 import org.junit.Before
 import org.junit.Test
 import org.mockito.Mock
@@ -10,8 +10,6 @@ import org.mockito.Mockito
 import org.mockito.Mockito.times
 import org.mockito.Mockito.verify
 import org.mockito.MockitoAnnotations
-import okhttp3.mockwebserver.MockWebServer
-import okhttp3.mockwebserver.RecordedRequest
 import java.io.File
 
 class CoroutinesUnitTest {
