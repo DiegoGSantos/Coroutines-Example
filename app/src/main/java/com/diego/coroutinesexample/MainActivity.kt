@@ -1,20 +1,15 @@
 package com.diego.coroutinesexample
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Handler
+import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
-import android.view.View
 import android.view.View.GONE
 import android.view.View.VISIBLE
-import android.widget.ArrayAdapter
 import com.diego.coroutinesexample.restClient.response.Event
-import com.diego.coroutinessample.restClient.Service
-import com.diego.coroutinessample.restClient.awaitResponse
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.coroutines.experimental.*
-import kotlinx.coroutines.experimental.android.UI
-import retrofit2.Response
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        launch(UI) {
+        GlobalScope.launch(Dispatchers.Main) {
            presenter.getEvents()
         }
     }

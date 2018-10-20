@@ -1,10 +1,12 @@
 package com.diego.coroutinessample.restClient
 
-import kotlinx.coroutines.experimental.CancellableContinuation
-import kotlinx.coroutines.experimental.suspendCancellableCoroutine
+import kotlinx.coroutines.CancellableContinuation
+import kotlinx.coroutines.suspendCancellableCoroutine
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import kotlin.coroutines.resume
+import kotlin.coroutines.resumeWithException
 
 suspend fun <T : Any?> Call<T>.awaitResponse(): Response<T> {
     return suspendCancellableCoroutine { continuation ->
